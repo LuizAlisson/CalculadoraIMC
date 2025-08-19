@@ -74,6 +74,8 @@ namespace CalculadoraIMC
             if (resultado < 18.5)
             {
                 lblCondição.Text = ("Abaixo do peso");
+                lblCondição.BackColor = Color.Yellow;   // Fundo amarelo
+                lblCondição.ForeColor = Color.Black;    // Texto preto
             }
 
             else if (resultado <= 24.9)
@@ -81,26 +83,36 @@ namespace CalculadoraIMC
                 lblCondição.Text = ("Peso ideal");
                 MessageBox.Show("VOCÊ ESTÁ NO PESO IDEAL", "PARABÉNS",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                lblCondição.BackColor = Color.Lime;     // Fundo verde-limão
+                lblCondição.ForeColor = Color.Black;
             }
 
             else if (resultado <= 29.9)
             {
                 lblCondição.Text = ("Levemente acima do peso");
+                lblCondição.BackColor = Color.Orange;   // Fundo laranja
+                lblCondição.ForeColor = Color.Black;
             }
 
             else if (resultado <= 34.9)
             {
                 lblCondição.Text = ("Obesidade grau I");
+                lblCondição.BackColor = Color.OrangeRed; // Laranja avermelhado
+                lblCondição.ForeColor = Color.White;
             }
 
             else if (resultado <= 39.9)
             {
                 lblCondição.Text = ("Obesidade grau II (severa)");
+                lblCondição.BackColor = Color.Red;       // Vermelho forte
+                lblCondição.ForeColor = Color.White;
             }
 
-            else if (resultado < 40)
+            else if (resultado >= 40)
             {
                 lblCondição.Text = ("Obesidade III (Mórbida)");
+                lblCondição.BackColor = Color.DarkRed;   // Vermelho escuro
+                lblCondição.ForeColor = Color.White;
             }
 
 

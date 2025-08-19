@@ -87,7 +87,7 @@
             // pctTabela
             // 
             this.pctTabela.Image = global::CalculadoraIMC.Properties.Resources.IMC_tabela;
-            this.pctTabela.Location = new System.Drawing.Point(372, 28);
+            this.pctTabela.Location = new System.Drawing.Point(377, 38);
             this.pctTabela.Name = "pctTabela";
             this.pctTabela.Size = new System.Drawing.Size(375, 162);
             this.pctTabela.TabIndex = 5;
@@ -113,9 +113,10 @@
             // lblCondição
             // 
             this.lblCondição.AutoSize = true;
-            this.lblCondição.Location = new System.Drawing.Point(151, 297);
+            this.lblCondição.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCondição.Location = new System.Drawing.Point(186, 285);
             this.lblCondição.Name = "lblCondição";
-            this.lblCondição.Size = new System.Drawing.Size(52, 13);
+            this.lblCondição.Size = new System.Drawing.Size(84, 21);
             this.lblCondição.TabIndex = 8;
             this.lblCondição.Text = "Condição";
             // 
